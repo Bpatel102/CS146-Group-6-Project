@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #252b35;
+    background-color: white;
+}
+
+.reservation-section {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #c82032;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-heading h1 {
+    margin: 0 0 10px;
+    color: #172b4d;
+    font-size: 36px;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.reservation-form {
+    padding: 30px;
+    background-color: #f4f6f9;
+    border-top: 5px solid #c82032;
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #172b4d;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd2da;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #c82032;
+    border-color: #c82032;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.reservation-button {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c82032;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reservation-button:hover {
+    background-color: #a91929;
+}
+
+@media (max-width: 600px) {
+
+    .reservation-section {
+        width: 94%;
+        padding: 35px 0;
+    }
+
+    .section-heading h1 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    .reservation-form {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

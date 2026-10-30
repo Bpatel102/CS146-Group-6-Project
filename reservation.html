@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Stevens Athletics Facility Scheduler</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="reservation-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Facility Reservations</p>
+
+                <h1>Make a Reservation</h1>
+
+                <p>
+                    Submit a reservation request for a Stevens athletic facility.
+                    Check the schedule before selecting a time.
+                </p>
+            </div>
+
+            <form class="reservation-form">
+
+                <div class="form-group">
+                    <label for="organization">Team or Organization</label>
+
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        placeholder="Enter team or organization"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="facility">Facility</label>
+
+                    <select id="facility" name="facility" required>
+                        <option value="">Select a facility</option>
+                        <option value="debaun-field">DeBaun Field</option>
+                        <option value="canavan-arena">Canavan Arena</option>
+                        <option value="walker-gym">Walker Gymnasium</option>
+                        <option value="schaefer-fitness">Schaefer Fitness Center</option>
+                        <option value="ucc-fitness">UCC Fitness Center</option>
+                        <option value="debaun-aquatic">DeBaun Aquatic Center</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="start-time">Start Time</label>
+
+                        <input
+                            type="time"
+                            id="start-time"
+                            name="start-time"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="end-time">End Time</label>
+
+                        <input
+                            type="time"
+                            id="end-time"
+                            name="end-time"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="activity">Activity</label>
+
+                    <input
+                        type="text"
+                        id="activity"
+                        name="activity"
+                        placeholder="Example: Team Practice"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="information">Additional Information</label>
+
+                    <textarea
+                        id="information"
+                        name="information"
+                        rows="5"
+                        placeholder="Enter any additional information about the reservation"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="reservation-button">
+                    Request Reservation
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
