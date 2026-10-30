@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #252b35;
+    background-color: white;
+}
+
+.schedule-section {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #c82032;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-heading h1 {
+    margin: 0 0 10px;
+    color: #172b4d;
+    font-size: 36px;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.schedule-filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-weight: bold;
+    color: #172b4d;
+}
+
+.filter-group select,
+.filter-group input {
+    min-width: 220px;
+    padding: 10px;
+    border: 1px solid #ccd2da;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.schedule-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 16px 12px;
+    text-align: center;
+    border: 1px solid #dfe3e8;
+}
+
+.schedule-table thead th {
+    color: white;
+    background-color: #172b4d;
+    font-weight: bold;
+}
+
+.schedule-table tbody th {
+    color: #172b4d;
+    background-color: #f4f6f9;
+    font-weight: bold;
+}
+
+.schedule-table tbody tr:nth-child(even) td {
+    background-color: #f9fafb;
+}
+
+.schedule-table tbody tr:hover td {
+    background-color: #f4f6f9;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status.available {
+    color: #216e39;
+    background-color: #e3f5e8;
+}
+
+.schedule-note {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+
+    .schedule-section {
+        padding: 45px 0;
+    }
+
+    .section-heading h1 {
+        font-size: 30px;
+    }
+
+    .schedule-filters {
+        flex-direction: column;
+    }
+
+    .filter-group select,
+    .filter-group input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .schedule-section {
+        width: 94%;
+        padding: 35px 0;
+    }
+
+    .section-heading h1 {
+        font-size: 26px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    .schedule-filters {
+        padding: 15px;
+    }
+}

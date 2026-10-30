@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Stevens Athletics Facility Scheduler</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="schedule-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">Facility Schedule</p>
+                <h1>View Facility Availability</h1>
+                <p>
+                    Check the schedule for Stevens athletic facilities
+                    and find available times.
+                </p>
+            </div>
+
+            <form class="schedule-filters">
+
+                <div class="filter-group">
+                    <label for="facility">Facility</label>
+
+                    <select id="facility" name="facility">
+                        <option value="all">All Facilities</option>
+                        <option value="debaun-field">DeBaun Field</option>
+                        <option value="canavan-arena">Canavan Arena</option>
+                        <option value="walker-gym">Walker Gymnasium</option>
+                        <option value="schaefer-fitness">Schaefer Fitness Center</option>
+                        <option value="ucc-fitness">UCC Fitness Center</option>
+                        <option value="debaun-aquatic">DeBaun Aquatic Center</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+            </form>
+
+            <div class="schedule-table-container">
+
+                <table class="schedule-table">
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>DeBaun Field</th>
+                            <th>Canavan Arena</th>
+                            <th>Walker Gymnasium</th>
+                            <th>Schaefer Fitness Center</th>
+                            <th>UCC Fitness Center</th>
+                            <th>DeBaun Aquatic Center</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th>8:00 AM - 10:00 AM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <th>10:00 AM - 12:00 PM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <th>12:00 PM - 2:00 PM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <th>2:00 PM - 4:00 PM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <th>4:00 PM - 6:00 PM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <th>6:00 PM - 8:00 PM</th>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="schedule-note">
+                Schedule information shown is sample data for the project prototype.
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>
